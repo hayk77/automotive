@@ -37,8 +37,8 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
 
   return (
     <SignInContainer>
-      <SignInTitle>I already have an account</SignInTitle>
-      <span>Sign in with your email and password</span>
+      <SignInTitle>Արդեն գրանցվա՞ծ ես</SignInTitle>
+      <span>Մուտք գործիր էլ․ հասցեի և գաղտնաբառի միջոցով</span>
 
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -46,7 +46,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           type='email'
           handleChange={handleChange}
           value={email}
-          label='email'
+          label='Էլ․ հասցե'
           required
         />
         <FormInput
@@ -54,17 +54,17 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           type='password'
           value={password}
           handleChange={handleChange}
-          label='password'
+          label='Գաղտնաբառ'
           required
         />
         <ButtonsBarContainer>
-          <CustomButton type='submit'> Sign in </CustomButton>
+          <CustomButton type='submit'>Մուտք</CustomButton>
           <CustomButton
             type='button'
             onClick={googleSignInStart}
             isGoogleSignIn
           >
-            Sign in with Google
+            Google
           </CustomButton>
         </ButtonsBarContainer>
       </form>
@@ -78,7 +78,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch(emailSignInStart({ email, password }))
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(SignIn);
+export default connect(null, mapDispatchToProps)(SignIn);

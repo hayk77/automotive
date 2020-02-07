@@ -37,15 +37,15 @@ const SignUp = ({ signUpStart }) => {
 
   return (
     <SignUpContainer>
-      <SignUpTitle>I do not have a account</SignUpTitle>
-      <span>Sign up with your email and password</span>
+      <SignUpTitle>Գրանցվել</SignUpTitle>
+      <span>Գրանցվիր էլ․ հասցեի և գաղտնաբառի միջոցով</span>
       <form className='sign-up-form' onSubmit={handleSubmit}>
         <FormInput
           type='text'
           name='displayName'
           value={displayName}
           onChange={handleChange}
-          label='Display Name'
+          label='Անուն'
           required
         />
         <FormInput
@@ -53,7 +53,7 @@ const SignUp = ({ signUpStart }) => {
           name='email'
           value={email}
           onChange={handleChange}
-          label='Email'
+          label='Էլ․ հասցե'
           required
         />
         <FormInput
@@ -61,7 +61,7 @@ const SignUp = ({ signUpStart }) => {
           name='password'
           value={password}
           onChange={handleChange}
-          label='Password'
+          label='Գաղտնաբառ'
           required
         />
         <FormInput
@@ -69,10 +69,10 @@ const SignUp = ({ signUpStart }) => {
           name='confirmPassword'
           value={confirmPassword}
           onChange={handleChange}
-          label='Confirm Password'
+          label='Հաստատել գաղտնաբառը'
           required
         />
-        <CustomButton type='submit'>SIGN UP</CustomButton>
+        <CustomButton type='submit'>Գրանցվել</CustomButton>
       </form>
     </SignUpContainer>
   );
@@ -82,7 +82,4 @@ const mapDispatchToProps = dispatch => ({
   signUpStart: userCredentials => dispatch(signUpStart(userCredentials))
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(SignUp);
+export default connect(null, mapDispatchToProps)(SignUp);

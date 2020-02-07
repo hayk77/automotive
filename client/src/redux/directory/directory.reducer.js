@@ -22,7 +22,7 @@ const INITIAL_STATE = {
       linkUrl: 'shop/sneakers'
     },
     {
-      title: 'սրահի թարմացում',
+      title: 'սրահ',
       imageUrl:
         'https://images.unsplash.com/photo-1546933751-ab7b6e888c66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       size: 'large',
@@ -30,7 +30,7 @@ const INITIAL_STATE = {
       linkUrl: 'shop/womens'
     },
     {
-      title: 'խնամքի պարագաներ',
+      title: 'խնամք',
       imageUrl:
         'https://images.unsplash.com/photo-1565689876697-e467b6c54da2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       size: 'large',
@@ -46,7 +46,7 @@ const INITIAL_STATE = {
       linkUrl: 'shop/mens'
     },
     {
-      title: 'արտաքին ձևավորում',
+      title: 'ձևավորում',
       imageUrl:
         'https://images.unsplash.com/photo-1541238461542-84a690d5e638?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
       size: 'large',

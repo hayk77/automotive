@@ -20,8 +20,22 @@ export const CollectionItemContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    margin: 3px;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+
+      button {
+        opacity: unset;
+      }
+    }
+  }
+
   @media screen and (max-width: 800px) {
-    width: 40vw;
+    width: 95vw;
 
     &:hover {
       .image {
@@ -65,14 +79,31 @@ export const CollectionFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+
+  @media screen and (max-width: 1400px) {
+    margin-bottom: 20px;
+    display: block;
+  }
+  @media screen and (max-width: 800px) {
+    margin-bottom: 20px;
+    display: flex;
+  }
 `;
 
 export const NameContainer = styled.span`
   width: 90%;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 1400px) {
+    display: block;
+  }
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 15%;
   text-align: right;
+
+  @media screen and (max-width: 1400px) {
+    display: block;
+  }
 `;
