@@ -24,7 +24,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
     </LogoContainer>
     <OptionsContainer>
       <OptionLink to='/shop'>ՕՆԼԱՅՆ ԽԱՆՈՒԹ</OptionLink>
-      <OptionLink to='/shop'>ՀԵՏԱԴԱՐՁ ԿԱՊ</OptionLink>
+      <OptionLink to='/about'>ՄԵՐ ՄԱՍԻՆ</OptionLink>
       {currentUser ? (
         <OptionLink as='div' onClick={signOutStart}>
           ԴՈՒՐՍ ԳԱԼ

@@ -86,13 +86,14 @@ export const CollectionFooterContainer = styled.div`
   }
   @media screen and (max-width: 800px) {
     margin-bottom: 20px;
-    display: flex;
+    display: block;
+    padding: 0 36px;
   }
 `;
 
 export const NameContainer = styled.span`
   width: 90%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media screen and (max-width: 1400px) {
     display: block;
@@ -102,6 +103,7 @@ export const NameContainer = styled.span`
 export const PriceContainer = styled.span`
   width: 15%;
   text-align: right;
+  font-weight: 700;
 
   @media screen and (max-width: 1400px) {
     display: block;

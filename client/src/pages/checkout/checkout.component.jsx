@@ -14,33 +14,32 @@ import {
   CheckoutPageContainer,
   CheckoutHeaderContainer,
   HeaderBlockContainer,
-  TotalContainer,
-  WarningContainer
+  TotalContainer
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <CheckoutPageContainer>
+  <CheckoutPageContainer style={{ marginBottom: '15px' }}>
     <CheckoutHeaderContainer>
       <HeaderBlockContainer>
-        <span>Product</span>
+        <span>Ապրանքանիշ</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Description</span>
+        <span>Նկարագրություն</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Quantity</span>
+        <span>Քանակ</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Price</span>
+        <span>Գին</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Remove</span>
+        <span>Ջնջել</span>
       </HeaderBlockContainer>
     </CheckoutHeaderContainer>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <TotalContainer>TOTAL: ${total}</TotalContainer>
+    <TotalContainer>ԸՆԴՀԱՆՈՒՐ: ${total}</TotalContainer>
     {/* <WarningContainer>
       *Please use the following test credit card for payments*
       <br />

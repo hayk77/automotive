@@ -16,26 +16,25 @@ const StripeCheckoutButton = ({ price }) => {
       }
     })
       .then(response => {
-        alert('succesful payment');
+        alert('Պատվիրված է');
       })
       .catch(error => {
         console.log('Payment Error: ', error);
-        alert(
-          'There was an issue with your payment! Please make sure you use the provided credit card.'
-        );
+        alert('Վճարման խնդիր։ Խնդրում ենք ստուգել ձեր քարտի տվյալները։');
       });
   };
 
   return (
     <StripeCheckout
-      label='Pay Now'
-      name='CRWN Clothing Ltd.'
-      billingAddress
-      shippingAddress
-      image='https://svgshare.com/i/CUz.svg'
-      description={`Your total is $${price}`}
+      label='Պատվիրել'
+      name='Automotive'
+      currency=''
+      // shippingAddress
+      // billingAddress={false}
+      description={`Ընհանուր ${price} դրամ`}
       amount={priceForStripe}
-      panelLabel='Pay Now'
+      allowRememberMe={false}
+      panelLabel='Պատվիրել'
       token={onToken}
       stripeKey={publishableKey}
     />

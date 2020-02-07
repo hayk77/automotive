@@ -8,12 +8,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: #ffd300;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 
   @media screen and (max-width: 800px) {
     height: 60px;
     padding: 4px;
-    margin-bottom: 20px;
   }
 `;
 
@@ -44,4 +43,8 @@ export const OptionLink = styled(Link)`
   color: #000000
   padding: 10px 15px;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+  }
 `;
